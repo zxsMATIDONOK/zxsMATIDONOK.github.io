@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Разоблачение кейсов | Демин Боровец</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9eef5 100%);
+    color: #1a1a2e;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Контейнер */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Заголовок */
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    font-size: 42px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #1a1a2e 0%, #4f7cff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 12px;
+}
+
+.header p {
+    color: #666;
+    font-size: 18px;
+}
+
+/* Логотип и меню */
+.logo {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.menu {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu span {
+    color: #4f7cff;
+    font-weight: 500;
+}
+
+/* Карточки в ряд с переносом */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Карточка */
+.card {
+    flex: 1 1 280px;
+    min-width: 280px;
+    max-width: 320px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Изображение */
+.card-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #e0e0e0;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+/* Бейдж */
+.card-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    z-index: 2;
+}
+
+/* Контент */
+.card-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #1a1a2e;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    padding: 12px 20px;
+    background: #f0f2f5;
+    border: none;
+    border-radius: 40px;
+    color: #1a1a2e;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+    margin-top: auto;
+    width: 100%;
+}
+
+.card-btn:hover {
+    background: linear-gradient(135deg, #4f7cff 0%, #3b66e0 100%);
+    color: white;
+}
+
+/* Подвал */
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    color: #888;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+
+.footer .authors {
+    color: #4f7cff;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    
+    .header h1 {
+        font-size: 32px;
+    }
+    
+    .card {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    
+    .card-image {
+        height: 200px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Шапка -->
+    <div class="logo">LOGO</div>
+    <div class="menu">
+        <span>Меню / Кнопка</span>
+    </div>
+
+    <div class="header">
+        <h1>Разоблачение мотоциклов</h1>
+        <p>Честные обзоры мототехники от Демина и Боровца</p>
+    </div>
+
+    <!-- Карточки -->
+    <div class="cards">
+        <!-- Пантера -->
+        <div class="card">
+            <div class="card-image">
+                <img src="пантера.jpg" alt="Пантера">
+                <div class="card-badge">🔥 ТОП</div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Пантера</div>
+                <div class="card-text">Эндуро 200, "пантера хавает говнокейсы", так скажет любой кто знает этого монстра на 166fmm моторе, камерой сгорания 223 см³. Только пантерка тянет хата Индура с агрессивной шипастой покрышкой "БЕРИ И ЕБОШ", говорят все пользователи этого великолепного индура-мотоцикла</div>
+                <button class="card-btn">Подробнее</button>
+            </div>
+        </div>
+
+        <!-- Кейс K16 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="кейс.jpg" alt="Кейс K16">
+                <div class="card-badge">⚠️ НЕ РЕКОМЕНДУЕМ</div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Кейс K16</div>
+                <div class="card-text">Говнокейс, срет обгонными говномуфтами, даже близко не стоит рядом с ВЕЛИКОЙ ПАНТЕРОЙ, перефоршенный китай, который сыпется после первого запуска, печально-знаменитый мотор NB-300(174), с убогой покрышкой "MITAS", этот мотоцикл не потянет Хата Индура</div>
+                <button class="card-btn">Подробнее</button>
+            </div>
+        </div>
+
+        <!-- Альфа -->
+        <div class="card">
+            <div class="card-image">
+                <img src="альфа.jpg" alt="Альфа">
+                <div class="card-badge">⭐ НАРОДНЫЙ</div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Альфа</div>
+                <div class="card-text">Альфа 110 см³ (по документам 50), этот легендарный мопед стоит почти на равне с великой пантеркой, но не дотягивает, так же "хавает говнокейсы", отлично показывает себя в Хата Индура, универсальный транспорт и для дорог и для пересеченной местности</div>
+                <button class="card-btn">Подробнее</button>
+            </div>
+        </div>
+
+        <!-- Какаой К1 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="какайо.jpg" alt="Какаой К1">
+                <div class="card-badge">💀 ХУДШИЙ</div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Какаой К1</div>
+                <div class="card-text">Какаой К1, ненадежный 172fmm мотор (250 см³), стоит наравне с кейсом, так же сыпется, над ними смеются все пользователи пантерки и альф, никак не показывает себя в Хата Индура, перефоршенный китай</div>
+                <button class="card-btn">Подробнее</button>
+            </div>
+        </div>
+
+        <!-- Новая карточка: Ирбис -->
+        <div class="card">
+            <div class="card-image">
+                <img src="рейсер.jpg" alt="рейсер">
+                <div class="card-badge">🐯 ВОЗДУХАНСКИЙ</div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">Рейсер</div>
+                <div class="card-text">Рейсер- мотор 166fmm 223 см³(по словам владельца 250!) - по настоящему ВОЗДУХАНСКОЕ охлаждение. Не тянет Хата Индура, но для деревни и легкого бездорожья самое то. Детали очень дорогие (стоимость только выхлопной системы 15 000 рублей), ремонт только у профисионального мастера. Хороший вариант для профессиональных райдеров, но до великой пантерки далеко!</div>
+                <button class="card-btn">Подробнее</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <div class="footer">
+        <div class="authors">Боровец Данила | Демин Александр</div>
+        <div>© все права защищены</div>
+    </div>
+</div>
+
+</body>
+</html>
